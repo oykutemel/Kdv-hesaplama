@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arka_plan"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KDV Hesaplayıcı"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ürün fiyatı"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_fiyat"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:hint="Ürün fiyatı giriniz:"
+            android:inputType="numberDecimal"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KDV oranı"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:id="@+id/edt_kdv"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:hint="KDV oranı giriniz:"
+            android:inputType="numberDecimal"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_hesapla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:text="Hesapla"
+            tools:ignore="TextContrastCheck" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
